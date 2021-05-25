@@ -5,10 +5,12 @@ import Contact from "./Contact";
 function Header() {
   const darkStyle = {
     backgroundColor: "rgb(90,89,89)",
+    maxWidth: "50%",
   };
 
   let lightStyle = {
     backgroundColor: "rgb(120, 100, 255)",
+    maxWidth: "50%",
   };
 
   const { text, isDark } = useContext(ResumeContext);
