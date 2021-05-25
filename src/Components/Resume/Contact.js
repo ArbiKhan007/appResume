@@ -6,7 +6,9 @@ function Contact() {
 
   return (
     <>
-      <div style={{ margin: "0.8rem", maxWidth: "30%" }}>
+      <div
+        style={{ margin: "0.8rem", maxWidth: "35%", wordWrap: "break-word" }}
+      >
         <h3>Info</h3>
         <h5>Email</h5>
         <h6>{text.email}</h6>
@@ -14,8 +16,8 @@ function Contact() {
         <h6>{text.phone}</h6>
         <h5>Linkedin</h5>
         <h6>linkedin.com/{text.linkedin}</h6>
-        <h5>Email</h5>
-        <h6>{text.email}</h6>
+        <h5>Twitter</h5>
+        <h6>{text.twitter}</h6>
       </div>
     </>
   );
