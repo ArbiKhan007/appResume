@@ -6,7 +6,7 @@ function Contact() {
 
   return (
     <>
-      <div style={{ margin: "0.8rem", maxWidth: "25%" }}>
+      <div style={{ margin: "0.8rem", maxWidth: "30%" }}>
         <h3>Info</h3>
         <h5>Email</h5>
         <h6>{text.email}</h6>

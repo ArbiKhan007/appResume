@@ -449,6 +449,10 @@ textarea {
   margin-top: 2rem;
 }
 
+.resume__header__address h5 {
+  line-height: 2rem;
+}
+
 .resume__header__address p {
   font-weight: 300;
 }
