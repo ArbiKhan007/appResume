@@ -1,0 +1,35 @@
+.resume__header {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 1rem;
+  color: #fff;
+  max-height: 24%;
+}
+
+.resume__header__address {
+  margin-top: 2rem;
+}
+
+.resume__header__address p {
+  font-weight: 300;
+}
+
+.resume__header__email {
+  line-height: 1.3rem;
+}
+
+.resume__header__personal h1 {
+  font-size: 2.75rem;
+  margin: 0.35rem;
+}
+
+.resume__header__personal h1 .first-name {
+  color: coral;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

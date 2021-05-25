@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import ResumeContext from "../../ResumeContext";
+import Contact from "./Contact";
 
 function Header() {
   const darkStyle = {
@@ -26,48 +27,17 @@ function Header() {
         </div>
 
         <div className="resume__header__address">
-          <h5>Address</h5>
-          <p>
+          <h3>Address</h3>
+          <h5>
             {text.addlineone}
             <br /> {text.addlinetwo} <br />
             {text.city}
             <br /> {text.state}, {text.country}
-          </p>
+          </h5>
         </div>
       </div>
-      <div>
-        <div>
-          <div className="resume__header__email">
-            <div className="float-left">
-              <h6>Email </h6>
-            </div>
-            <p className="float-right">{text.email}</p>
-          </div>
 
-          <div className="resume__header__email">
-            <div className="float-left">
-              <h6>Phone </h6>
-            </div>
-            <p className="float-right">{text.phone}</p>
-          </div>
-        </div>
-
-        <div>
-          <div className="resume__header__email">
-            <div className="float-left">
-              <h6>LinkedIn </h6>
-            </div>
-            <p className="float-right">{text.linkedin}</p>
-          </div>
-
-          <div className="resume__header__email">
-            <div className="float-left">
-              <h6>Twitter </h6>
-            </div>
-            <p className="float-right">{text.twitter}</p>
-          </div>
-        </div>
-      </div>
+      <Contact />
     </div>
   );
 }

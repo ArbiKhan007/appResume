@@ -1,0 +1,21 @@
+.builder-container {
+  padding: 1rem;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: 2px 0 0.5cm rgb(90, 89, 89);
+}
+
+.builder-container label {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.builder-container input,
+textarea {
+  margin-top: 0.5rem;
+  /* box-shadow: 0 3px 1px rgb(90, 89, 89); */
+}
+
+.builder-container input:hover {
+  box-shadow: 0 0 0;
+}

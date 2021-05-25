@@ -5,7 +5,7 @@ import Resume from "./Components/Resume/Resume";
 import ResumeBuilder from "./Components/Builder/ResumeBuilder";
 import OutputModal from "./Components/OutputModal/OutputModal";
 
-import "./css/main.css";
+import "./styles/main.css";
 
 function MainComponent() {
   const [text, setText] = useState({
