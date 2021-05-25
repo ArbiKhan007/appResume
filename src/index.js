@@ -1,17 +1,89 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import ResumeContext from "./ResumeContext";
+import Resume from "./Components/Resume/Resume";
+import ResumeBuilder from "./Components/Builder/ResumeBuilder";
+import OutputModal from "./Components/OutputModal/OutputModal";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import "./css/main.css";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function MainComponent() {
+  const [text, setText] = useState({
+    fName: "John",
+    lname: "Doe",
+    desig: "Current Job Title",
+    email: "lorem@ipsum.com",
+    phone: "Phone Number",
+    addlineone: "Address Line One",
+    addlinetwo: "Line Two",
+    city: "New York",
+    state: "New York",
+    country: "US",
+    linkedin: "linkedin.com/lorem",
+    twitter: "@loremipsum",
+    firstJob: "Current Post",
+    prevJob: "Previous Post",
+    startDate: "Start Date",
+    startDateTwo: "Start Date",
+    endDate: "End Date",
+    descriptionOne: "Lorem Ipsum",
+    descriptionTwo: "Lorem Ipsum",
+    descriptionThree: "Lorem Ipsum",
+    descriptionFour: "Lorem Ipsum",
+    descriptionFive: "Lorem Ipsum",
+    descriptionSix: "Lorem Ipsum",
+    school: "School",
+    degreeSchool: "Degree",
+    fromSchool: "From",
+    toSchool: "To",
+    college: "College",
+    degreeCollege: "Degree",
+    fromCollege: "From",
+    toCollege: "To",
+    skillOne: "Skill",
+    skillTwo: "Skill",
+    skillThree: "Skill",
+    skillFour: "Skill",
+  });
+
+  localStorage.setItem("user", text);
+
+  const [isDark, setIsDark] = useState(false);
+
+  const [isOutputted, setIsOutputted] = useState(false);
+
+  function setTextOnScreen(Event) {
+    const target = Event.target;
+    const name = target.name;
+    const value = target.value;
+
+    setText({
+      ...text,
+      [name]: value,
+    });
+  }
+
+  return (
+    <ResumeContext.Provider
+      value={{
+        setTextOnScreen,
+        setIsDark,
+        setIsOutputted,
+        setText,
+        text,
+        isDark,
+        isOutputted,
+      }}
+    >
+      <div className="app">
+        <ResumeBuilder />
+
+        <Resume text={text} />
+
+        <OutputModal />
+      </div>
+    </ResumeContext.Provider>
+  );
+}
+
+ReactDOM.render(<MainComponent />, document.getElementById("root"));

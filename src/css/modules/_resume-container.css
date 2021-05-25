@@ -1,0 +1,7 @@
+.resume-container {
+  margin: 1rem 3rem;
+  width: 22cm;
+  min-height: 29.7cm;
+  box-shadow: -2px 0 0.5cm rgb(90, 89, 89);
+  font-family: "Lora", serif;
+}
