@@ -8,6 +8,8 @@ import PrintComp from "./PrintComp";
 import ResumeContext from "../../ResumeContext";
 import QualificationsBuilder from "./QualificationBuilder";
 import SkillsBuilder from "./SkillsBuilder";
+import MadeBy from "./MadeBy";
+import Reach from "./Reach";
 
 function ResumeBuilder() {
   const darkStyle = {
@@ -25,6 +27,7 @@ function ResumeBuilder() {
   return (
     <div className="builder-container" style={isDark ? darkStyle : lightStyle}>
       <ThemeChanger />
+      <MadeBy />
       <PrintComp />
       <BrowserRouter>
         <RouterPanel />
@@ -45,6 +48,7 @@ function ResumeBuilder() {
             <HeaderBuilder />
           </Route>
         </Switch>
+        <Reach />
       </BrowserRouter>
     </div>
   );
