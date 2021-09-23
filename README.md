@@ -4,7 +4,7 @@
 
 ### What is Rezumer?
 
-### Rezumer helps you create beautiful professional looking resumé within minutes by just providing info.
+#### Rezumer helps you create beautiful professional looking resumé within minutes.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
