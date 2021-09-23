@@ -2,7 +2,9 @@
 
 [Go to Rezumer app](https://rezumer.netlify.app/ "Ultimate tool to create resumé")
 
+### What is Rezumer?
 
+### Rezumer helps you create beautiful professional looking resumé within minutes by just providing info.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
