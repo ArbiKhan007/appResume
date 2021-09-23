@@ -1,6 +1,6 @@
 > # Rezumer
 
-[Go to Rezumer app](https://rezumer.netlify.app/ "Ultimate tool to create resumé")
+[Go to Rezumer app](https://rezumer.netlify.app/ "Ultimate tool to create resumé)
 
 
 
